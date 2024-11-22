@@ -1,0 +1,35 @@
+{
+    // Metadata name for the devcontainer
+    "name": "NodeJS devcontainer",
+
+    // Build context specification, in this case using Dockerfile
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+        // "target": "" // Dockerfile target for development environment
+    },
+
+    // IDE specific customizations
+    "customizations": {
+        "vscode": {
+            // list of goto extensions installed for seamless IDE experience
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "xabikos.JavaScriptSnippets",
+                "christian-kohler.npm-intellisense",
+                "christian-kohler.path-intellisense",
+                "Orta.vscode-jest",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
+
+    // To enable port forwarding from within devcontainer to host
+    "appPort": ["8000:8000"],
+
+    // To enable starting node at start (the below command uses script named start in package.json file)
+    // "postStartCommand": "npm start"
+
+    // Uncomment the following line to use another user instead of asura within the devcontainer (such as root)
+    // "remoteUser": ""
+}
