@@ -24,20 +24,28 @@ PageTitle.css = `
 `
 
 PageTitle.afterDOMLoaded = `
+  function changeTheme(theme) {
+    var logo = "/images/logo.png"
+    if (theme === "dark") {
+      logo = "/images/dark-logo.png"
+    }
+    
+    const element = document.getElementById("logo");
+    if (element !== undefined) {
+      element.src = logo; 
+    }
+    console.log("Theme changed to " + e.detail.theme) // either "light" or "dark"
+  }
+
   document.addEventListener("themechange", (e) => {
-  const theme = e.detail.theme
-  var logo = "/images/logo.png"
-  if (theme === "dark") {
-    logo = "/images/dark-logo.png"
-  }
+    const theme = e.detail.theme
+    changeTheme(theme);
+  });
+
+  window.addEventListener("load", (e) => {
+    changeTheme(localStorage.getItem("theme"));
+  });
   
-  const element = document.getElementById("logo");
-  if (element !== undefined) {
-    element.src = logo; 
-  }
-  console.log("Theme changed to " + e.detail.theme) // either "light" or "dark"
-  // your logic here
-})
 `
 
 export default (() => PageTitle) satisfies QuartzComponentConstructor
