@@ -42,6 +42,10 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         segments.push(displayedTime)
       }
 
+      if (fileData.frontmatter?.author) {
+        segments.push(<span style="color: var(--dark)"><i class="fa-solid fa-user"></i> {fileData.frontmatter?.author}</span>)
+      }
+
       const segmentsElements = segments.map((segment) => <span>{segment}</span>)
 
       return (
