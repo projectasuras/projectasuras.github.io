@@ -112,7 +112,9 @@ SeriesEnabler.css = `
 	margin-left: auto;
 	margin-right: auto;
 	overflow-x: hidden;
-	/* border: 1px solid var(--lightgray); */
+	border: 1px solid var(--lightgray);
+  border-spacing: 0;
+  min-width: 350px;
 }
 .series-table thead tr td {
   font-weight: bold;
