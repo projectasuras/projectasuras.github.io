@@ -13,7 +13,8 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "google",
+      tagId: "G-FHNS47PS24",
     },
     locale: "en-US",
     baseUrl: "https://projectasuras.github.io/",
