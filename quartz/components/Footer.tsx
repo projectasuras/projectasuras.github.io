@@ -27,7 +27,7 @@ export default ((opts?: Options) => {
           <a href="https://dev.to/projectasuras" target="_blank" class="text-white" style={"margin-right: 1.0rem!important"}><i class="fa-brands fa-dev"></i></a>
           <a href="https://www.youtube.com/@projectasuras" target="_blank" class="text-white" style={"margin-right: 1.0rem!important"}><i class="fa-brands fa-youtube"></i></a>
           <a href="https://twitter.com/projectasuras" target="_blank" class="text-white" style={"margin-right: 1.0rem!important"}><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://www.linkedin.com/in/project-asuras-2bb07333a" target="_blank" class="text-white" style={"margin-right: 1.0rem!important"}><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/company/projectasuras" target="_blank" class="text-white" style={"margin-right: 1.0rem!important"}><i class="fa-brands fa-linkedin"></i></a>
           <a href="https://www.instagram.com/projectasuras/" target="_blank" class="text-white" style={"margin-right: 1.0rem!important"}><i class="fa-brands fa-instagram"></i></a>
           <a href="https://hub.docker.com/u/projectasuras" target="_blank" class="text-white" style={"margin-right: 1.0rem!important"}><i class="fa-brands fa-docker"></i></a>
           <a href="mailto:projectasuras@proton.me" target="_blank" class="text-white" style={"margin-right: 1.0rem!important"}><i class="fa fa-envelope"></i></a>
